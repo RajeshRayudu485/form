@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+    } 
+    @media screen and (min-width:0px) and (max-width:400px){
+        #menu>ul{
+            display: none;
+        }
+    }  
+    
+    /* nav tag */
+    nav{
+        height: 75px;
+        background-color:rgba(53, 46, 46, 0.581);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* logo block,menublock */
+    #logo,#menu{
+        height: 75px;
+        width: 450px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        color: aliceblue;
+    
+    }
+    #menu>ul{
+        height: 75px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+    }
+    #menu a{
+        text-decoration: none;
+        color:aliceblue;
+    }
+    #form-container{
+        height: 88vh;
+        background-color:floralwhite;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 0px 25px;
+        
+    }
+    #Register{ 
+    
+        height: 500px;
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction:column;
+        border-radius: 8px;
+        background-color:rgb(236, 202, 202);
+        box-shadow: 16px 16px 20px #7c7070;
+    
+    }
+    #Register:hover{
+        box-shadow: 16px 16px 20px rgb(212, 209, 255);
+    }
+    #registration{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction:column;
+        border-radius: 5px;
+    }
+     
+    
+    
+    #registration>input{
+        width: 260px;
+        height: 30px;
+        align-items: center;
+        border-radius: 7px;
+        padding-top: 7px;
+        padding-left: 10px;
+    
+    }
+    #registration  label{
+        padding-top: 5px;
+    }
+    
+    button{
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 25px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: rgb(24, 179, 240);
+        color:crimson;
+        transition: 1.2s;
+    
+    
+    }
+    #gender{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    button:hover{
+        background-color:  rgb(188, 218, 230);
+        padding-bottom: 10px;
+    }
+    h2{
+        padding-top: 10px;
+    }</style>
+</head>
+<body>
+    <nav> 
+        <!-- <div id="logo">LOGO BLOCK</div> -->
+        <div id="menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PROFILE</a></li>
+            </ul>
+        </div>
+     </div>
+     </nav>
+     <!-- section form -->
+     <div id="form-container">
+        <form action="">
+        <div id="Register">
+            <h2>Registration Form</h2>
+        
+            <div id="registration"> 
+                <label for="">Username</label>
+                <input type="text"  placeholder="username">
+            </div>
+            <div id="registration"> 
+                <label for="">Passsword</label>
+                <input type="text"  placeholder="Password">
+            </div>
+
+            <div id="registration"> 
+                <label for="">DOB</label>
+                <input type="date"  placeholder="">
+            </div>
+            <div id="registration"> 
+                <label for="">Email</label>
+                <input type="email"  placeholder="email">
+            </div>
+            <div id="registration"> 
+                <label for="">Phone</label>
+                <input type="number"  placeholder="number">
+            </div>
+            <div id="registration"> 
+              <label for="">Gender</label>
+               <div id="gender"> male <input type="radio"  name="gender">
+               female <input type="radio"  name="gender"></div>
+            </div>
+            <div> 
+                <button>Register</button>
+            </div>
+    
+        
+
+
+
+
+        </div>
+    </form> 
+    </div>
+    
+</body>
+</html>
